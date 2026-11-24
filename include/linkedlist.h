@@ -24,8 +24,14 @@ class linkedlist{
     int size();
     void display();
     int& getDataByIndex(int index);
-  
-
+    ~linkedlist(){
+        while(head != NULL){
+            node* temp = head;
+            head = head->next;
+            delete temp;
+        }
+        tail = NULL;
+    }
 };
 
 #endif

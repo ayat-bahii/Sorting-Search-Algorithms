@@ -42,7 +42,7 @@ void selectionsort(linkedlist &llk){
     }
 }
 
-int binarysearch(linkedlist llk,int val){
+int binarysearch(linkedlist &llk,int val){
     int n=llk.size();
     int maxi=n-1,mini=0,mid=0,midval=0;
     while(mini<=maxi){
